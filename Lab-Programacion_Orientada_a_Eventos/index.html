@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Práctica del DOM</title>
+</head>
+<body>
+
+  <p id="para1">Soy un párrafo.</p>
+  <p id="para2">Soy otro párrafo.</p>
+
+  <h1>Películas Famosas</h1>
+  <ul class="list">
+      <li>Titanic</li>
+      <li>Jurassic Park</li>
+      <li>El señor de los Anillos</li>
+      <li>Star Wars</li>
+  </ul>
+
+  <h2>Elementos que se utilizan en desarrollo Web:</h2>
+
+  <script>
+    const paragraph1 = document.getElementById("para1");
+    console.log("Contenido del párrafo 1:", paragraph1.textContent);
+
+    const h1Element = document.querySelector("h1");
+    console.log("Elemento h1:", h1Element);
+
+    const list = document.querySelector(".list");
+    console.log("Elemento con clase .list:", list);
+
+    const listaDeElementos = document.querySelectorAll("ul > li");
+    console.log("Iterando sobre todos los elementos li:");
+    listaDeElementos.forEach((item) => {
+      console.log(item);
+    });
+
+    let listaSinOrden = document.createElement("ul");
+    document.body.appendChild(listaSinOrden);
+
+    let elemento1Lista = document.createElement("li");
+    elemento1Lista.textContent = "HTML";
+    listaSinOrden.appendChild(elemento1Lista);
+
+    let elemento2Lista = document.createElement("li");
+    elemento2Lista.textContent = "CSS";
+    listaSinOrden.appendChild(elemento2Lista);
+
+    let elemento3Lista = document.createElement("li");
+    elemento3Lista.textContent = "JS";
+    listaSinOrden.appendChild(elemento3Lista);
+
+    let newH3 = document.createElement("h3");
+    newH3.textContent = "Hola soy un texto en color negro";
+    document.body.appendChild(newH3);
+
+    const h3 = document.querySelector("h3");
+    h3.style.color = "blue";
+    h3.textContent = "Ohh no me cambiaron a azul.";
+    console.log("Elemento h3 modificado:", newH3);
+
+    let newButton = document.createElement("button");
+    newButton.textContent = "Mostrar Alerta";
+    newButton.setAttribute("id", "btn");
+    document.body.appendChild(newButton);
+
+    const button = document.getElementById("btn");
+    button.addEventListener("click", () => {
+      alert("Gracias por el click");
+    });
+
+  </script>
+</body>
+</html>
