@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav id="main-nav">
+        <div class="logo">Lab2</div>
+        <ul class="nav-links">
+            <li><a href="#">Nav 1</a></li>
+            <li><a href="#">Nav 2</a></li>
+            <li><a href="#">Nav 3</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hero</h1>
+            <p>Content</p>
+            <button class="btn-primary">Button</button>
+        </div>
+    </header>
+
+    <section class="features">
+        <h2>Features</h2>
+        <div class="card-container">
+            <article class="card">
+                <h3>Feature 1</h3>
+                <p>Descripcion</p>
+            </article>
+            <article class="card">
+                <h3>Feature 2</h3>
+                <p>Descripcion</p>
+            </article>
+            <article class="card">
+                <h3>Feature 3</h3>
+                <p>Descripcion</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="reflexion">
+        <h2>Reflexion</h2>
+        <div class="qa-item">
+            <h4>¿Cuál es la diferencia entre padding y margin?</h4>
+            <p>El <strong>padding</strong> es el espacio interno de un elemento (entre el contenido y el borde), mientras que el <strong>margin</strong> es el espacio externo (separa al elemento de sus vecinos).</p>
+        </div>
+        <div class="qa-item">
+            <h4>¿Por qué se recomienda usar box-sizing: border-box?</h4>
+            <p>Porque hace que el <code>width</code> y <code>height</code> incluyan el padding y el borde. Esto evita que los elementos se vuelvan más grandes de lo definido al añadirles espacio interno.</p>
+        </div>
+        <div class="qa-item">
+            <h4>¿Qué significa diseñar con enfoque mobile-first?</h4>
+            <p>Significa escribir primero los estilos para pantallas pequeñas y usar Media Queries para añadir complejidad en tablets y desktops. Mejora el rendimiento y la experiencia en móviles.</p>
+        </div>
+        <div class="qa-item">
+            <h4>¿En qué situaciones preferirías rem sobre px?</h4>
+            <p>Para tipografía y espaciado general, ya que <code>rem</code> es relativo al tamaño de fuente de la raíz, lo que permite que el diseño sea accesible y se adapte a las preferencias del usuario.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Mi Footer</p>
+    </footer>
+
+</body>
+</html>
